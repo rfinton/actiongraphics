@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ActionGraphics - 3 def ways</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-fUMURLTdEcpeYHly3PAwggI3l2UvdHNg/I+8LRph7hLDcAZm77YfDx3Tjum9d3vK" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+                integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <style>
+            .masthead {
+                width: 100%;
+                height: 24em;
+                margin-bottom: 3em;
+            }
+            
+            .masthead img {
+                width: 100%;
+                height: 100%;
+            }
+            form {
+                width: 75%;
+                margin: auto; 
+                padding: 7%;
+                box-shadow: 5px 5px 5px gray;
+                background-color: #e6e6e6;
+                border-radius: 2%;
+            }
+            
+            .footer {
+                height: 5em;
+            }
+            
+            .formHeader {
+                text-align: center;
+                margin: 0 0 3em 0;
+            }
+            
+            h2 {
+                color: #F9A350;
+                font-weight: bolder;
+            }
+            
+            h3 {
+                color: black;
+            }
+            
+            .text-body {
+                width: 75%;
+                margin: auto;
+            }
+            
+            .footer {
+                padding: 2em;
+            }
+            
+            @media screen and (max-width:740px) {
+                .text-body, form {
+                    width: 90%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="masthead">
+            <img src="http://s3.amazonaws.com/actiongraphics.com/images/lp-1-banner-01.png" alt="banner" />
+        </div>
+        
+        <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                    
+                    <div class="text-body">
+                        
+                        <h2>Header 3</h2>
+                    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis dui eu diam vehicula, ac sollicitudin libero gravida. Sed ac molestie erat. Maecenas non odio facilisis, dictum libero ut, viverra risus. Proin aliquam eget enim eget feugiat. Vivamus a magna mi. Aliquam mollis leo lectus, a mattis nunc pharetra et. Praesent nec bibendum ex. Donec vel lorem rhoncus, egestas dui vel, auctor odio. In consectetur metus nec nulla molestie cursus. Integer vel luctus felis, in porttitor arcu.</p>
+
+                        <p>Nullam volutpat elementum ligula, in ultricies sem rutrum eu. Etiam sem nulla, semper ut tristique sed, rhoncus at mauris. Aliquam vel diam luctus, gravida turpis at, sagittis ligula. Sed at metus id quam gravida ullamcorper id dignissim lectus. Sed quam est, fringilla ac neque a, euismod varius turpis. Etiam consectetur consectetur purus, et laoreet tortor suscipit sed. Nam eu quam in sapien tincidunt convallis nec ac sapien. Nunc aliquam ligula lorem, id pharetra lectus blandit ut. Nullam laoreet at mauris eu hendrerit. Fusce ac efficitur odio. Mauris vestibulum diam sit amet ante rutrum, vel consequat erat maximus. Nunc mollis ex nulla, id tempor lectus tincidunt vitae. Etiam a ultrices nisi.</p>
+
+                        <p>Ut et rutrum lacus. Duis sodales, felis dictum lobortis auctor, arcu ipsum rhoncus magna, a luctus odio justo id urna. Praesent lectus leo, blandit a ex eleifend, pellentesque tincidunt elit. In et tincidunt erat. Phasellus porta, nulla semper efficitur sodales, est metus aliquam dui, ultrices laoreet erat odio quis est. Donec varius erat et augue pretium, sit amet pharetra dui consectetur. Nulla in laoreet metus. Praesent euismod sem vitae ipsum porttitor rhoncus at a mauris. Maecenas condimentum viverra scelerisque. Sed placerat vestibulum metus, ut ullamcorper odio dictum at. Suspendisse venenatis eros eget sem hendrerit, quis dapibus metus pharetra. Fusce viverra malesuada risus laoreet molestie.</p>
+
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-5">
+                    
+                    <form role="form" method="post">
+                        
+                        <div class="formHeader">
+                            <h3><strong>Access the Whitepaper</strong></h3>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" class="form-control" name="firstname" />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" class="form-control" name="lastname" />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Organization:</label>
+                            <input type="text" class="form-control" name="organization" />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="title">Title:</label>
+                            <input type="text" class="form-control" name="title" />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" name="email" />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="LP1_question">Main Area of Responsibility:</label>
+                            <select class="form-control" name="LP1_question">
+                                <option value="">-Select-</option>
+                            </select>
+                        </div>
+                        
+                        <a href="#" class="btn btn-warning btn-lg">
+                          <span class="glyphicon glyphicon-download-alt"></span>  Download
+                        </a>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <img src="http://actiongraphicsnj.com/wp-content/uploads/2015/08/AG-1c_Black.png" alt="agLogo" />
+                <p><br></p>
+                <p>Helping organizations <br> increase the value of their <br> communications.</p>
+            </div>
+        </div>
+    </body>
+</html>
