@@ -12,16 +12,21 @@
         <style>
             .masthead {
                 width: 100%;
-                height: 24em;
-                margin-bottom: 3em;
+                max-height: 24em;
+                margin-bottom: 1em;
+                overflow: hidden;
             }
             
             .masthead img {
                 width: 100%;
-                height: 100%;
             }
+            
+            .text-p {
+                font-size: 140%;
+            }
+            
             form {
-                width: 85%;
+                width: 100%;
                 margin: auto; 
                 padding: 7%;
                 box-shadow: 5px 5px 5px gray;
@@ -48,7 +53,7 @@
             }
             
             .text-body {
-                width: 75%;
+                width: 100%;
                 margin: auto;
             }
             
@@ -65,13 +70,15 @@
     </head>
     <body>
         <div class="masthead">
-            <img src="http://dl.dropboxusercontent.com/u/14320617/actiongraphics/banner_lp1.png" alt="banner" />
+            <img src="http://dl.dropboxusercontent.com/u/14320617/actiongraphics/banner_lp1.png" />
         </div>
         
         <div class="container-fluid">
             
             <div class="row">
-                <div class="col-xs-12 col-sm-8">
+                <div class="col-xs-0 col-sm-1"></div>
+                
+                <div class="col-xs-12 col-sm-7">
                     
                     <div class="text-body">
                         
@@ -79,15 +86,15 @@
                         <h3><strong>Whitepaper: Three Definitive Ways to Retain Donors and Increase Engagement</strong></h3>
                         <h3><span style="color:#F9A350">Summary</span></h3>
                     
-                        <p>Donor retention is arguably one of the biggest challenges that all nonprofits face when it comes to fundraising. The top contributor to donor disenchantment is a lack of sufficient engaging communications. With so many ways to communicate—both digitally and in print—it’s difficult to determine the best outlet for your organization. How can successful organizations implement adequate campaigns and also make each touch with their donors or prospects personal without breaking the bank? </p>
+                        <p class="text-p">Donor retention is arguably one of the biggest challenges that all nonprofits face when it comes to fundraising. The top contributor to donor disenchantment is a lack of sufficient engaging communications. With so many ways to communicate—both digitally and in print—it’s difficult to determine the best outlet for your organization. How can successful organizations implement adequate campaigns and also make each touch with their donors or prospects personal without breaking the bank? </p>
 
-                        <p>When small tweaks are made to the ways in which you communicate as an organization that help drive engagement and leverage the valuable data you have on hand so that your messaging remains relevant, donors will stick around. In this whitepaper we’ll walk through a three-prong approach to help you create more engaging communications that’ll help you develop a strong base of loyal donors. </p>
+                        <p class="text-p">When small tweaks are made to the ways in which you communicate as an organization that help drive engagement and leverage the valuable data you have on hand so that your messaging remains relevant, donors will stick around. In this whitepaper we’ll walk through a three-prong approach to help you create more engaging communications that’ll help you develop a strong base of loyal donors. </p>
 
                     </div>
                     
                 </div>
                 
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-3">
                     
                     <form role="form" method="post">
                         
@@ -124,6 +131,10 @@
                             <label for="LP1_question">Main Area of Responsibility:</label>
                             <select class="form-control" name="LP1_question">
                                 <option value="">-Select-</option>
+                                <option value="Fundraising and Annual Giving">Fundraising&#47;Annual Giving</option>
+                                <option value="Special Events">Special Events</option>
+                                <option value="Marketing and Communication">Marketing and Communications</option>
+                                <option value="Community Engagement and Outreach">Community Engagement&#47;Outreach</option>
                             </select>
                         </div>
                         
@@ -132,6 +143,8 @@
                         </a>
                     </form>
                 </div>
+            
+                <div class="col-xs-0 col-sm-1"></div>
             </div>
             
             <div class="footer">
