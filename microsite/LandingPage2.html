@@ -270,7 +270,7 @@
                     <div class="et_pb_blurb_content">
                       <div class="et_pb_main_blurb_image">
                         <span class="et-pb-icon et-waypoint et_pb_animation_off" style="color: #53bceb;">
-                          <img src="http://s3.amazonaws.com/actiongraphics.com/images/icons-01.png" alt="target" />
+                          <img class="jadeIcons" src="http://s3.amazonaws.com/actiongraphics.com/images/icons-01.png" alt="target" />
                         </span>
                       </div>
                       
@@ -287,7 +287,7 @@
 				    <div class="et_pb_blurb_content">
 				      <div class="et_pb_main_blurb_image">
                         <span class="et-pb-icon et-waypoint et_pb_animation_off" style="color: #f9a350;">
-                          <img src="http://s3.amazonaws.com/actiongraphics.com/images/icons-02.png" alt="target" />
+                          <img class="jadeIcons" src="http://s3.amazonaws.com/actiongraphics.com/images/icons-02.png" alt="target" />
                         </span>
                       </div>
 				      <div class="et_pb_blurb_container">
@@ -303,7 +303,7 @@
                     <div class="et_pb_blurb_content">
                       <div class="et_pb_main_blurb_image">
                         <span class="et-pb-icon et-waypoint et_pb_animation_off" style="color: #c859a1;">
-                          <img src="http://s3.amazonaws.com/actiongraphics.com/images/icons-03.png" alt="target" />
+                          <img class="jadeIcons" src="http://s3.amazonaws.com/actiongraphics.com/images/icons-03.png" alt="target" />
                         </span>
                       </div>
                       <div class="et_pb_blurb_container">
@@ -510,7 +510,7 @@
 
                             <div class="col-sm-6 col-xs-12">
                               <div class="form-group">
-                                <textarea class="form-control" rows="12" name="comment" placeholder="comment"></textarea>
+                                <textarea class="form-control" rows="12" name="comment" placeholder="What is your most pressing goal?"></textarea>
                               </div>
                             </div>
 
@@ -614,6 +614,10 @@
   </script>
   <script type='text/javascript' src='http://actiongraphicsnj.com/wp-content/themes/Divi/includes/builder/scripts/frontend-builder-scripts.js?ver=2.5.3'></script>
   <style>
+    .jadeIcons {
+      opacity: 0;
+    }
+    
     input[type=text] {
       padding: 20px;
       background-color: #ede9e3;
@@ -627,7 +631,11 @@
       background-color: #ede9e3;
     }
     
-    @media screen and (max-width: 700px){      
+    @media screen and (max-width: 700px){
+      .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content, .et_pb_fullscreen .et_pb_fullwidth_header_container {
+        width: 100%;
+      }
+      
       .et-pb-icon, .industry-hover-circle {
         display: inline;
       }
@@ -641,6 +649,57 @@
       }
     }
   </style>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      jade1 = [$('.jadeIcons').eq(0), false];
+      jade2 = [$('.jadeIcons').eq(1), false];
+      jade3 = [$('.jadeIcons').eq(2), false];
+      
+      $(window).scroll(function(){
+          windowTop = $(window).scrollTop();
+          windowBottom = $(window).scrollTop() + $(window).height();
+          
+          if( jade1[0].offset().top > windowBottom || (jade1[0].offset().top + jade1[0].outerHeight()) < windowTop ){
+            if( jade1[1] ){
+              jade1[1] = false;
+              jade1[0].css('opacity',0);
+            }
+          }
+          else{
+            if( !jade1[1] ){
+              jade1[1] = true;
+              jade1[0].animate({opacity:1},1500);
+            }
+          }
+        
+          if( jade2[0].offset().top > windowBottom || (jade2[0].offset().top + jade2[0].outerHeight()) < windowTop ){
+            if( jade2[1] ){
+              jade2[1] = false;
+              jade2[0].css('opacity',0);
+            }
+          }
+          else{
+            if( !jade2[1] ){
+              jade2[1] = true;
+              jade2[0].animate({opacity:1},1500);
+            }
+          }
+        
+          if( jade3[0].offset().top > windowBottom || (jade3[0].offset().top + jade3[0].outerHeight()) < windowTop ){
+            if( jade3[1] ){
+              jade3[1] = false;
+              jade3[0].css('opacity',0);
+            }
+          }
+          else{
+            if( !jade3[1] ){
+              jade3[1] = true;
+              jade3[0].animate({opacity:1},1500);
+            }
+          }
+      });
+    });
+  </script>
   <!-- 
   <script src="http://actiongraphicsnj.com/wp-content/themes/actiongraphics/instantclick.min.js" data-no-instant></script>
   <script data-no-instant>InstantClick.init();</script>
