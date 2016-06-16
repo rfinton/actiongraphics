@@ -233,7 +233,7 @@
                   <div class="et_pb_fullwidth_header_container center">
                     <div class="header-content-container center">
                       <div class="header-content">
-                        <h1><span style="text-transform:uppercase">##firstname##</span><br>NOT ALL YOUR DONORS ARE THE SAME</h1>
+                        <h1><span style="text-transform:uppercase">##firstname##,</span><br>NOT ALL YOUR DONORS ARE THE SAME</h1>
                         <p> </p>
                       </div>
                     </div>
@@ -510,7 +510,7 @@
 
                             <div class="col-sm-6 col-xs-12">
                               <div class="form-group">
-                                <textarea class="form-control" rows="12" name="comment" placeholder="What is your most pressing goal?"></textarea>
+                                <textarea class="form-control" rows="12" name="comment" placeholder="What is your most pressing issue?"></textarea>
                               </div>
                             </div>
 
@@ -632,7 +632,8 @@
     }
     
     @media screen and (max-width: 700px){
-      .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content, .et_pb_fullscreen .et_pb_fullwidth_header_container {
+      .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content, 
+      .et_pb_fullscreen .et_pb_fullwidth_header_container {
         width: 100%;
       }
       
@@ -699,6 +700,8 @@
           }
       });
     });
+    
+    $('.weblator-tab-content-1').css('height', 'auto');
   </script>
   <!-- 
   <script src="http://actiongraphicsnj.com/wp-content/themes/actiongraphics/instantclick.min.js" data-no-instant></script>
